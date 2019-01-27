@@ -14,6 +14,9 @@ namespace Odcinek10
         // Stan 
         List<float> ratings;
 
+        public string Name;
+    
+
         // Zachowania)
         public void AddRating(float rating)
         {
