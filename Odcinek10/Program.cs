@@ -16,6 +16,9 @@ namespace Odcinek10
 
             diary = new Diary();
             diary.AddRating(8);
+             
+
+            
         }
     }
 }
