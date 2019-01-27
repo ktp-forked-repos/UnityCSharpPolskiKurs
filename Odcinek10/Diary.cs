@@ -17,7 +17,11 @@ namespace Odcinek10
         // Zachowania)
         public void AddRating(float rating)
         {
-            ratings.Add(rating);
+            if (rating >= 0 && rating <= 10)
+            {
+                ratings.Add(rating);
+
+            }
         }
      
         internal DiaryStatistics ComputeStatistics()

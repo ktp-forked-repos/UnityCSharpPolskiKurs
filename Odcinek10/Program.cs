@@ -11,17 +11,10 @@ namespace Odcinek10
             
             diary.AddRating(5);
             diary.AddRating(8.5f);
-            diary.AddRating(4.5f);
+            diary.AddRating(11);
 
             DiaryStatistics stats = diary.ComputeStatistics();
-            
-            Console.WriteLine("Średnia ocena: " + stats.AverageGrade);
-            Console.WriteLine("Maksymalna ocena: " + stats.MaxGrade);
-            Console.WriteLine("Minimalna ocena: " + stats.MinGrade);
-            Console.WriteLine();
-
-       
-            Console.ReadKey();
+ 
         }
     }
 }
