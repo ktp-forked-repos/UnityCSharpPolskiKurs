@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Odcinek10
 {
@@ -11,13 +8,32 @@ namespace Odcinek10
         static void Main(string[] args)
         {
             Diary diary = new Diary();
-            diary.AddRating(3);
+            
             diary.AddRating(5);
+            diary.AddRating(8.5f);
+            diary.AddRating(4.5f);
 
-            Diary diary2 = new Diary();
-            diary2.AddRating(8);
+            DiaryStatistics stats = diary.ComputeStatistics();
+            
+            Console.WriteLine("Średnia ocena: " + stats.AverageGrade);
+            Console.WriteLine("Maksymalna ocena: " + stats.MaxGrade);
+            Console.WriteLine("Minimalna ocena: " + stats.MinGrade);
             Console.WriteLine();
 
+            Diary diary2 = new Diary();
+            diary2.AddRating(6);
+            diary2.AddRating(3.5f);
+            diary2.AddRating(6.4f);
+            diary2.AddRating(10);
+            diary2.AddRating(3.1f);
+            diary2.AddRating(8.6f);
+
+            stats = diary2.ComputeStatistics();
+            Console.WriteLine("Średnia ocena: " + stats.AverageGrade);
+            Console.WriteLine("Maksymalna ocena: " + stats.MaxGrade);
+            Console.WriteLine("Minimalna ocena: " + stats.MinGrade);
+
+            Console.ReadKey();
         }
     }
 }
