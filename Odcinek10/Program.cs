@@ -33,6 +33,7 @@ namespace Odcinek10
             Console.WriteLine("Maksymalna ocena: " + stats.MaxGrade);
             Console.WriteLine("Minimalna ocena: " + stats.MinGrade);
 
+            Console.WriteLine();
             Console.ReadKey();
         }
     }
