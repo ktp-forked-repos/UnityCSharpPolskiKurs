@@ -10,15 +10,11 @@ namespace Odcinek10
         {
             ratings = new List<float>();
         }
-        // Stan (zmienne - pola)
+
+        // Stan 
         List<float> ratings;
 
-        // Zachowania (są to metody pisane aby umożliwić działania wykonywane w programie na danych dostarczonych, dodanie ocen, statystyki)
-
-        /// <summary>
-        /// Dodaje ocenę do dzienniczka
-        /// </summary>
-        /// <param name="rating">nowa ocena</param>
+        // Zachowania)
         public void AddRating(float rating)
         {
             ratings.Add(rating);
