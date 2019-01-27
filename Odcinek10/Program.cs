@@ -14,11 +14,9 @@ namespace Odcinek10
             diary.AddRating(3);
             diary.AddRating(5);
 
-            diary = new Diary();
-            diary.AddRating(8);
-            Console.WriteLine("Tylko dla sprawdzenia!!!");
-            Console.WriteLine("Tylko dla sprawdzenia!!!");
-            Console.WriteLine("Tylko dla sprawdzenia!!!");
+            Diary diary2 = new Diary();
+            diary2.AddRating(8);
+            Console.WriteLine();
 
         }
     }
