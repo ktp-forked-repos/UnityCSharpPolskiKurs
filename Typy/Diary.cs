@@ -33,10 +33,12 @@ namespace Typy
             {
                 sum += rating;
             }
+
             stats.AverageGrade = sum / ratings.Count();
             stats.MaxGrade = ratings.Max();
             stats.MinGrade = ratings.Min();
-            return ComputeStatistics();
+
+            return stats;
         }
     }
 }
