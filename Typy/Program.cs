@@ -7,7 +7,7 @@ namespace Typy
         static void GiveName(ref Diary diary)
         {
             diary = new Diary();
-            Diary.Name = "Nowy dzienniczek Marcina";
+            diary.Name = "Nowy dzienniczek Marcina";
 
         }
         static void IncerementNumber(out int number)
@@ -20,7 +20,7 @@ namespace Typy
             Diary d1 = new Diary();
             Diary d2 = d1;
 
-            GiveName((ref d2));
+            GiveName(ref d2);
             Console.WriteLine(d2.Name);
         }
       

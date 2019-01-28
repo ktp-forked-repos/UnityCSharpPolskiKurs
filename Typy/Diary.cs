@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 
-
-
 namespace Typy
 {
     class Diary
@@ -12,12 +10,12 @@ namespace Typy
         {
             ratings = new List<float>();
         }
+
         // Stan (zmienne - pola)
         List<float> ratings;
-
         public string Name;
 
-        // Zachowanias (sąto metody pisane aby umożliwić działania, dodanie ocen, statystyki)
+        // Zachowanias Metody
         public void AddRating(float rating)
         {
             if (rating >= 0 && rating <= 10)
