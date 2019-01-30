@@ -26,6 +26,7 @@ namespace Odcinek10
             Diary d1 = new Diary();
             Diary d2 = d1;
 
+            d1 = new Diary();
             d1.Name = "Dzienniczek Marcina ";
             Console.WriteLine(d2.Name);
         }
