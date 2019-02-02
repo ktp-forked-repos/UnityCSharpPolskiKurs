@@ -9,6 +9,14 @@ namespace Typy.Tests
         public void CalculatemaxGrade()
         {
             Diary diary = new Diary();
+            diary.AddRating(9f);
+            diary.AddRating(7f);
+            diary.AddRating(7f);
+            diary.AddRating(5f);
+
+            DiaryStatistics stats = diary.ComputeStatistics();
+
+            Assert.AreEqual(9f,stats.MaxGrade);
         }
     }
 }
