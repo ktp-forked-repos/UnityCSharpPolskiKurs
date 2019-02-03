@@ -20,7 +20,7 @@ namespace Typy.Tests
 
             Assert.AreEqual(9f, stats.MaxGrade);
         }
-
+        
         [TestMethod]
         public void PassByValueClass()
         {
@@ -33,6 +33,33 @@ namespace Typy.Tests
         private void SetName(Diary diary)
         {
             diary.Name = "Kamil";
+        }
+
+        [TestMethod]
+        public void PassByValueInt()
+        {
+            int x1 = 5;
+            IncrementNumber(x1);
+
+            Assert.AreEqual(5, x1);
+        }
+
+        [TestMethod]
+        public void PassByRefInt()
+        {
+            int x1 = 5;
+            IncrementNumber(ref x1);
+
+            Assert.AreEqual(15, x1);
+        }
+
+        private void IncrementNumber(ref int number)
+        {
+            number = 15;
+        }
+        private void IncrementNumber(int number)
+        {
+            number = 15;
         }
     }
 }
