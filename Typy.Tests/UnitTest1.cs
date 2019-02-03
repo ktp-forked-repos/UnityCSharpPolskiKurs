@@ -10,7 +10,6 @@ namespace Typy.Tests
         public void TestMethod1()
         {
             bool value = false;
-            Console.WriteLine("kamil");
             Assert.IsTrue(value);
         }
     }
