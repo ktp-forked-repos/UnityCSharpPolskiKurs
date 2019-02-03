@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Typy
+namespace Members
 {
     public class DiaryStatistics
     {

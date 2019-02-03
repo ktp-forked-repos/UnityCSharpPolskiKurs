@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Typy
+namespace Members
 {
     public class Diary
     {
