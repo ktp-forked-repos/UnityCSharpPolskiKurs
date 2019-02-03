@@ -7,7 +7,7 @@ namespace Typy.Tests
     public class DiaryTests
     {
         [TestMethod]
-        public void calculatemaxGrade()
+        public void CalculateMaxGrade()
         {
             Diary diary = new Diary();
             diary.AddRating(9f);
@@ -20,17 +20,19 @@ namespace Typy.Tests
 
             Assert.AreEqual(9f, stats.MaxGrade);
         }
+
         [TestMethod]
-        public void passByvalueclass()
+        public void PassByValueClass()
         {
             Diary diary = new Diary();
-            diary.Name  "Jacek";
+            diary.Name = "Jacek";
             SetName(diary);
+            Assert.AreEqual("Kamil", diary.Name);
         }
 
         private void SetName(Diary diary)
         {
-
+            diary.Name = "Kamil";
         }
     }
 }
