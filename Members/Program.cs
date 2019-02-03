@@ -13,10 +13,11 @@ namespace Members
 
             DiaryStatistics stats = diary.ComputeStatistics();
             WriteResult("Average", stats.AverageGrade);
-            WriteResult("Max", stats.MaxGrade);
-            WriteResult("Min", stats.MinGrade);
+            WriteResult("Max", (int)stats.MaxGrade);
+            WriteResult("Min", (long)stats.MinGrade);
+            WriteResult("Min", (long)stats.MinGrade, 1);
         }
-        static void WriteResult(string description, float result)
+        static void WriteResult(string description, params float[] result)
         {
             Console.WriteLine(description + ": " + result);
         }
