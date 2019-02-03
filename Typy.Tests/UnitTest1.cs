@@ -7,14 +7,9 @@ namespace Typy.Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CalculatemaxGrade()
         {
-            bool value = false;
-<<<<<<< HEAD
-=======
-            Console.WriteLine("kamil");
->>>>>>> master
-            Assert.IsTrue(value);
+            Diary diary = new Diary();
         }
     }
 }

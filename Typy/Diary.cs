@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Typy
 {
-    public class Diary
+    class Diary
     {
         public Diary()
         {
